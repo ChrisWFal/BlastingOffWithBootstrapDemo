@@ -9,12 +9,14 @@
   <link href="css/bootstrap.min.css" media="all" rel="stylesheet" />
   <link href="css/main.css" media="all" rel="stylesheet" />
   <link href="Stylesheet.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js?body=1"></script>
 
 
 </head>
-<body>
+<body  ata-spy="scroll" d ata-target=".navbar" d ata-offset="50">
 
-<header class='navbar navbar-default navbar-static-top'>
+<header class='navbar navbar-inverse navbar-fixed-top'>
   <nav class='container' role='navigation'>
     <div class='navbar-header'>
       <!--<a href='index.html' class='panel-body'>Ski Colorado!</a>-->
@@ -35,9 +37,9 @@
 
     <ul class='nav navbar-nav navbar-right collapse navbar-collapse'>
 
-      <li><a href='#'>Lift tickets</a></li>
-      <li><a href='#'>Resorts</a></li>
-      <li><a href='#'>Pictures</a></li>
+      <li><a href='#Lift tickets'>Lift tickets</a></li>
+      <li><a href='#Resorts'>Resorts</a></li>
+      <li><a href='#pictures'>Pictures</a></li>
       <li class='dropdown'>
         <a href='/about' data-target='#' class='dropdown-toggle' data-toggle='dropdown'>About <span class='caret'></span></a>
         <ul class='dropdown-menu' role='menu'>
@@ -100,6 +102,7 @@
 
       </div>
         </div>
+
     </div>
 
     <div class='row text-center features'>
@@ -124,55 +127,36 @@
         If you find a pair you like, buy it from us new for a 10% discount!</p>
       </div>
     </div>
+
   </div>
-</div>
 
-<div class='footer'>
-  <div class='container'>
-    <div class='row'>
-      <div>
-        <h4>Who We Are</h4>
-        <p><i>Blasting Off With Bootstrap</i> is the fastest way to space. <a href='#'>Book your ticket today</a>!</p>
-        <p><a href='#'>More About Us <i class='glyphicon glyphicon-arrow-right'></i></a></p>
-      </div>
+    <div class="row text-center features">
+  <div id="Lift tickets">
 
-      <div>
-        <h4>Links</h4>
-        <ul class='list-unstyled'>
-          <li><a href='#'>Home</a></li>
-          <li><a href='#'>Tickets</a></li>
-          <li><a href='#'>Stations</a></li>
-        </ul>
-      </div>
-
-      <div class='clearfix visible-xs'></div>
-
-      <div>
-        <h4>Stay in Touch</h4>
-        <ul class='list-unstyled'>
-          <li><a href='#'>About</a></li>
-          <li><a href='#'>Contact Us</a></li>
-          <li><a href='#'>Blog</a></li>
-          <li><a href='#'>Twitter</a></li>
-          <li><a href='#'>Facebook</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h4>Contact Us</h4>
-        <ul class='list-unstyled'>
-          <li><i class='glyphicon glyphicon-globe'></i> Orlando, FL<li>
-          <li><i class='glyphicon glyphicon-phone'></i> 1-555-blast-off<li>
-          <li><i class='glyphicon glyphicon-envelope'></i> <a href='mailto:#'>blastingoff@codeschool.com</a><li>
-        </ul>
-
-        <p>Blasting Off With Bootstrap &copy;2214.</p>
-      </div>
+    <p>Buy your lift tickets at discounted prices from us!</p>
+  </div>
+  <div id="Resorts">
+    <p>Plan your vacation at one of colorados many resorts</p>
+  </div>
+  <div id="pictures">
+    <div class="col-md-4 col-sm-12">
+      <img src="images/skiing4.jpg" width="284" height="178" alt="ski1"/>
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <img src="images/skiing2.jpg" alt="ski2"/>
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <img src="images/skiing3.jpg" alt="ski3"/>
     </div>
   </div>
-</div>
+        <div class="btn-group" role="group" aria-label="...">
+            <button type="button" class="btn btn-default">next page</button>
+            <button type="button" class="btn btn-default">prev page</button>
+            </div>
+    </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="js/bootstrap.min.js?body=1"></script>
+
+
+
 </body>
 </html>
