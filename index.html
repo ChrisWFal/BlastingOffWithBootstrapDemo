@@ -4,10 +4,11 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Blasting Off With Bootstrap</title>
+  <title>Ski Colorado!</title>
 
   <link href="css/bootstrap.min.css" media="all" rel="stylesheet" />
   <link href="css/main.css" media="all" rel="stylesheet" />
+  <link href="Stylesheet.css" rel="stylesheet">
 
 
 </head>
@@ -16,7 +17,13 @@
 <header class='navbar navbar-default navbar-static-top'>
   <nav class='container' role='navigation'>
     <div class='navbar-header'>
-      <a href='index.html' class='navbar-brand'>Blasting Off With Bootstrap</a>
+      <!--<a href='index.html' class='panel-body'>Ski Colorado!</a>-->
+      <div class="panel panel-default">
+        <div class="panel-body">
+         <h3 class="panel-title"> Ski Colorado!</h3>
+        </div>
+      </div>
+
 
       <button type='button' class='navbar-toggle collapsed' data-toggle='collapse' data-target='.navbar-collapse'>
         <span class='sr-only'>Toggle navigation</span>
@@ -27,55 +34,94 @@
     </div>
 
     <ul class='nav navbar-nav navbar-right collapse navbar-collapse'>
-      <li><a href='#'>Tickets</a></li>
-      <li><a href='#'>Stations</a></li>
+
+      <li><a href='#'>Lift tickets</a></li>
+      <li><a href='#'>Resorts</a></li>
+      <li><a href='#'>Pictures</a></li>
       <li class='dropdown'>
         <a href='/about' data-target='#' class='dropdown-toggle' data-toggle='dropdown'>About <span class='caret'></span></a>
         <ul class='dropdown-menu' role='menu'>
-          <li><a href='#'>Our Story</a></li>
+          <li><a href='#'>Colorado</a></li>
           <li><a href='#'>Contact Us</a></li>
-          <li class='divider'></li>
-          <li><a href='#'>Blog</a></li>
-          <li class='divider'></li>
-          <li><a href='#'>Twitter</a></li>
-          <li><a href='#'>Facebook</a></li>
+          </ul>
+
+
         </ul>
       </li>
     </ul>
   </nav>
+
+
+
+
 </header>
 
 <section>
   <div class='container'>
+    <div class="jumbotron">
+
     <div class='row well well-lg'>
-      <div>
-        <h2>The Fastest Way to Space</h2>
-        <p class='lead'>Make your way to space in our rocket, elevator or transporter.</p>
-        <button type='button' class='btn btn-lg btn-default'>Take the Tour</button>
-        <button type='button' class='btn btn-lg btn-primary'>Book Tickets Now</button>
+
+      <div class="col-md-4">
+
+        <h2>Colorados #1 skiing website</h2>
+        <p class='lead'>Plan your vacation to one of Colorados ski resorts</p>
+
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Book a trip now</button>
+
+        <!-- Modal -->
+        <div id="myModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">information</h4>
+              </div>
+              <div class="modal-body">
+                <p>Currently under maintance, please call us to book a trip.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+        <button type='button' class='btn btn-lg btn-primary'>Buy lift tickets</button>
+
       </div>
-      <div class='col-md-6 visible-md visible-lg'>
-        <img src='images/img-header.jpg' alt='Blast off with Bootstrap' />
+      <div class='col-md-8 visible-md visible-lg'>
+
+        <img src='images/ski%20colorado.jpg' alt='ski colorado' />
+
       </div>
+        </div>
     </div>
 
     <div class='row text-center features'>
-      <div>
-        <i class='glyphicon glyphicon-briefcase '></i>
-        <h3>Book Today!</h3>
-        <p>Even if you're traveling tomorrow, you can still get tickets today. We have a number of conveniently located ports around the globe to service everyone.</p>
+      <div class="col-md-4 col-sm-12" >
+        <i class='glyphicon glyphicon-shopping-cart blue'></i>
+        <h3>Buy tickets!</h3>
+        <p>Buy tickets to any of the many resorts Colorado has to offer!
+        We offer exclusive deals you can find nowhere else.</p>
       </div>
 
-      <div>
-        <i class='glyphicon glyphicon-random'></i>
-        <h3>Go Anywhere</h3>
-        <p>If you need to get to space today, why not try out a transporter? Despite the claims, there are have been no deaths in the last 6 weeks!</p>
+      <div class="col-md-4 col-sm-6">
+        <i class='glyphicon glyphicon-folder-open blue'></i>
+        <h3>Snow reports</h3>
+        <p>Get the latest snow reports for all of Colorados resorts!
+        find out who has the best snow to plan your weekend getaway.</p>
       </div>
 
-      <div>
-        <i class='glyphicon glyphicon-send'></i>
-        <h3>RocketBus&reg;</h3>
-        <p>For cheapest fares, catch the next RocketBus&reg; to the stars. Cheaper on your wallet, and easiest way to make friends.</p>
+      <div class="col-md-4 col-sm-6">
+        <i class='glyphicon glyphicon-ok blue'></i>
+        <h3>Test skis</h3>
+        <p>Test the this years newest skis in our sponsored demo days.
+        If you find a pair you like, buy it from us new for a 10% discount!</p>
       </div>
     </div>
   </div>
